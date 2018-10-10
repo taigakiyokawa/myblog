@@ -6,6 +6,18 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-5.times do |i|
-  Post.create(title: "title #{i}", body: "body #{i}")
+=begin
+10.times do |i|
+  Oremeshi.create(
+    title: "ハムタロサァン", 
+    ingre: "ひまわりの種",
+    step1: "ヒミツなのだ",
+    step2: "ヒミツなのだ",
+    step3: "ヒミツなのだ",
+    step4: "ヒミツなのだ",
+    final: "完成なのだ",
+    time: "5",
+    category: "こうしくんはタヒね"
+    )
 end
+=end

@@ -1,0 +1,77 @@
+<p id="notice"><%= notice %></p>
+
+<div class="recipe">
+<p>
+  <h1><%= @oremeshi.title %></h1>
+</p>
+
+<p>
+  <strong>具:</strong>
+  <%= @oremeshi.ingre %>
+</p>
+
+<p>
+  <strong>流-壱:</strong>
+  <%= @oremeshi.step1 %>
+</p>
+
+<p>
+  <%#= image_tag @oremeshi.finalimage.thumb.url %>
+  <%= image_tag @oremeshi.image1.url, :size =>'480x320' %>
+</p>
+
+<p>
+  <strong>　 弐:</strong>
+  <%= @oremeshi.step2 %>
+</p>
+
+<p>
+  <%#= image_tag @oremeshi.finalimage.thumb.url %>
+  <%= image_tag @oremeshi.image2.url, :size =>'480x320' %>
+</p>
+
+<p>
+  <strong>　 参:</strong>
+  <%= @oremeshi.step3 %>
+</p>
+
+<p>
+  <%#= image_tag @oremeshi.finalimage.thumb.url %>
+  <%= image_tag @oremeshi.image3.url, :size =>'480x320' %>
+</p>
+
+<p>
+  <strong>　 四:</strong>
+  <%= @oremeshi.step4 %>
+</p>
+
+<p>
+  <%#= image_tag @oremeshi.finalimage.thumb.url %>
+  <%= image_tag @oremeshi.image4.url, :size =>'480x320' %>
+</p>
+
+<p>
+  <strong>　 伍:</strong>
+  <%= @oremeshi.final %>
+  
+</p>
+
+<p>
+  <%#= image_tag @oremeshi.finalimage.thumb.url %>
+  <%= image_tag @oremeshi.finalimage.url, :size =>'480x320' %>
+</p>
+
+<p>
+  <strong>刻:</strong>
+  <%= @oremeshi.time %>
+  <strong>分</strong>
+</p>
+
+<p>
+  <strong>属:</strong>
+  <%= @oremeshi.category %>
+</p>
+</div>
+
+<%= link_to 'Edit', edit_oremeshi_path(@oremeshi) %> |
+<%= link_to 'Back', oremeshis_path %>

@@ -1,0 +1,96 @@
+<%= form_with(model: oremeshi, local: true) do |form| %>
+  <% if oremeshi.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(oremeshi.errors.count, "error") %> prohibited this oremeshi from being saved:</h2>
+
+      <ul>
+      <% oremeshi.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= "名" %>
+    <!--<%= form.label :title %>-->
+    <%= form.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= "具" %>
+    <!--<%= form.label :ingre %>-->
+    <%= form.text_area :ingre %>
+  </div>
+
+  <div class="field">
+    <%= "流 一" %>
+    <!--<%= form.label :step1 %>-->
+    <%= form.text_field :step1 %>
+  </div>
+
+  <div class="field">
+    <!--<%= form.label :final %>-->
+    <%= form.file_field :image1 %>
+  </div>
+
+  <div class="field">
+    <%= "流 二" %>
+    <!--<%= form.label :step2 %>-->
+    <%= form.text_field :step2 %>
+  </div>
+
+  <div class="field">
+    <!--<%= form.label :final %>-->
+    <%= form.file_field :image2 %>
+  </div>
+
+  <div class="field">
+    <%= "流 三" %>
+    <!--<%= form.label :step3 %>-->
+    <%= form.text_field :step3 %>
+  </div>
+
+  <div class="field">
+    <!--<%= form.label :final %>-->
+    <%= form.file_field :image3 %>
+  </div>
+
+  <div class="field">
+    <%= "流 四" %>
+    <!--<%= form.label :step4 %>-->
+    <%= form.text_field :step4 %>
+  </div>
+
+  <div class="field">
+    <!--<%= form.label :final %>-->
+    <%= form.file_field :image4 %>
+  </div>
+
+  <div class="field">
+    <%= "流 五" %>
+    <!--<%= form.label :final %>-->
+    <%= form.text_field :final %>
+  </div>
+
+  <div class="field">
+    <!--<%= form.label :final %>-->
+    <%= form.file_field :finalimage %>
+  </div>
+
+  <div class="field">
+    <%= "時" %>
+    <!--<%= form.label :time %>-->
+    <%= form.number_field :time %>
+  </div>
+
+  <div class="field">
+    <%= "属" %>
+    <!--<%= form.label :category %>-->
+    <%= form.text_area :category %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

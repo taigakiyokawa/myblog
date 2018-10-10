@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  ingre: MyText
+  step1: MyString
+  step2: MyString
+  step3: MyString
+  step4: MyString
+  final: MyString
+  time: 1
+  category: MyText
+
+two:
+  title: MyString
+  ingre: MyText
+  step1: MyString
+  step2: MyString
+  step3: MyString
+  step4: MyString
+  final: MyString
+  time: 1
+  category: MyText

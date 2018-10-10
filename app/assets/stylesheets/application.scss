@@ -17,9 +17,17 @@
  // Custom bootstrap variavles must be set or imported *before* bootstrap.
  @import "bootstrap";
 
-.container {
-  width: 400px;
-  margin: 20px auto;
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  width: 750px;
+  height: 100%;
 }
 
 body {
@@ -27,26 +35,19 @@ body {
   font-size: 14px;
 }
 
-h2 {
-  font-size: 16px;
-  padding-bottom: 10px;
-  margin-bottom: 15px;
-  border-bottom: 1px solid #ddd;
-}
-
 ul > li {
   margin-bottom: 5px;
 }
 
 .logo {
-  width: 400px;
+  width: 100%;
   height: 160px;
+  padding: 0;
 }
 
 .header-menu {
   font-size: 12px;
   font-weight: normal;
-  float: right;
 }
 
 input[type="text"], textarea {
@@ -69,7 +70,74 @@ textarea {
   font-size: 12px;
 }
 
-h3 {
-  font-size: 14px;
-  padding-top: 25px;
+.head h1:before {
+  content: "";
+  padding-right: 10px;
+  border-left: 7px solid rgb(209, 86, 64);
+}
+
+.head h1 {
+  line-height: 50px;
+  float: left;
+  width: 450px;
+  border-bottom: 1px solid rgb(209, 86, 64);
+}
+
+.head h3 {
+  line-height: 50px;
+  font-size: 20px;
+  float: right;
+}
+
+table {
+  clear: both;
+}
+
+.content {
+  padding: 20px 20px;
+  width: 100%;
+  background: whitesmoke;
+}
+
+.meshi_title h4 {
+  border-bottom: 1px solid rgb(209, 86, 64);
+}
+
+.meshi_title {
+  width: 100%;
+}
+
+.meshi_thumb {
+  padding-left: 30px;
+}
+
+.container {
+  background: whitesmoke;
+  height: 100%;
+
+}
+
+.recipe {
+  padding: 10px 20px;
+  margin: 20px;
+  background: white;
+}
+
+.recipe h1 {
+  line-height: 50px;
+  float: left;
+  width: 100%;
+  border-bottom: 1px solid rgb(209, 86, 64);
+  margin-bottom: 20px;
+}
+
+.recipe p {
+  line-height: 30px;
+  font-size: 20px;
+}
+
+.recipe h1:before {
+  content: "";
+  padding-right: 10px;
+  border-left: 7px solid rgb(209, 86, 64);
 }
