@@ -69,3 +69,8 @@ gem 'bootstrap-will_paginate', '1.0.0'
 
 gem 'carrierwave'
 gem 'rmagick'
+
+gem 'devise'
+gem 'omniauth-google-oauth2'
+
+gem 'config'
