@@ -1,31 +1,28 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Myblog</title>
+    <title>魁!!漢飯</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %></p>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %></p>
   </head>
 
   <body>
-    <header>
+    <div class="container">
       <nav>
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
       <% if ore_user_signed_in? %>
-        <strong><%= link_to current_ore_user.username, root_path %></strong>
+        <%= link_to image_tag(current_ore_user.OreImage.url, :size =>'50x50'), root_path %>
         <%= link_to 'プロフィール変更', edit_ore_user_registration_path %>
         <%= link_to 'ログアウト', destroy_ore_user_session_path, method: :delete %>
       <% else %>
-        <%= link_to 'サインアップ', new_ore_user_registration_path %>
-        <%= link_to 'ログイン', new_ore_user_session_path %>
+        <p><%= link_to 'サインアップ', new_ore_user_registration_path %></p>
+        <p><%= link_to 'ログイン', new_ore_user_session_path %></p>
         <% end %>
       </nav>
-    </header>
-
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-    <div class="container">
       <h1><%= link_to image_tag('/assets/header.png', class: 'logo'), root_path %></h1>
     <%= yield %>
     </div>

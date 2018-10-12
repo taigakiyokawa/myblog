@@ -3,4 +3,6 @@ class OreUser < ApplicationRecord
   # :confirmable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable, :lockable, :timeoutable, :trackable
+
+  mount_uploader :OreImage, ImageUploader
 end
