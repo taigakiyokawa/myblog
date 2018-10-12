@@ -40,7 +40,7 @@ ul > li {
 }
 
 .logo {
-  width: 600px;
+  width: 500px;
 }
 
 .header-menu {
@@ -140,19 +140,28 @@ table {
   border-left: 7px solid rgb(209, 86, 64);
 }
 
-.square_btn{
-  display: inline-block;
-  padding: 0.5em 1em;
-  text-decoration: none;
-  background: #668ad8;/*ボタン色*/
-  color: #FFF;
-  border-bottom: solid 4px #627295;
-  border-radius: 3px;
+.user_menu {
+  float: left;
+  width: 80px;
+  margin: 10px 0 0 20px ;
 }
-.square_btn:active {/*ボタンを押したとき*/
-  -ms-transform: translateY(4px);
-  -webkit-transform: translateY(4px);
-  transform: translateY(4px);/*下に動く*/
-  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);/*影を小さく*/
-  border-bottom: none;
+
+.sign_up {
+  padding: 20px 20px;
 }
+
+.sign_up h1 {
+  line-height: 50px;
+  float: left;
+  width: 100%;
+  border-bottom: 1px solid rgb(209, 86, 64);
+  margin-bottom: 20px;
+}
+
+.sign_up h1:before {
+  content: "";
+  padding-right: 10px;
+  border-left: 7px solid rgb(209, 86, 64);
+}
+
+

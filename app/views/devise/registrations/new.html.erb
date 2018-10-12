@@ -1,39 +1,41 @@
-<h2>Sign up</h2>
+<div class="sign_up">
+<h1>入門</h1>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
 
   <div class="field">
-    <%= f.label :email %><br />
+    <strong>俺ノ宛</strong><br />
     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
   </div>
 
   <div class="field">
-    <%= f.label :username %><br />
+    <strong>俺ノ名</strong><br />
     <%= f.text_field :username %>
   </div>
 
   <div class="field">
-    <%= f.label :OreImage %>
+    <strong>俺ノ画</strong><br />
     <%= f.file_field :OreImage %>
   </div>
 
   <div class="field">
-    <%= f.label :password %>
+    <strong>合言葉</strong>
     <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
+    <em>(<%= @minimum_password_length %> 文字以上)</em>
     <% end %><br />
     <%= f.password_field :password, autocomplete: "new-password" %>
   </div>
 
   <div class="field">
-    <%= f.label :password_confirmation %><br />
+    <strong>合言葉（再入力）</strong><br />
     <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
   </div>
 
   <div class="actions">
-    <%= f.submit "Sign up" %>
+    <%= f.submit "入門" %>
   </div>
 <% end %>
 
 <%= render "devise/shared/links" %>
+</div>
